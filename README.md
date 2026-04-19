@@ -58,19 +58,18 @@ It helps businesses efficiently manage:
 
 ## 📁 Project Structure
 pos-inventory-system/
+📦 pos-inventory-system
+├── 📁 frontend
+│   └── 📁 src
+│       ├── 📁 app
+│       ├── 📁 features
+│       ├── 📁 pages
+│       ├── 📁 services
+│       ├── App.js
+│       └── index.js
 │
-├── frontend/
-│ └── src/
-│ ├── app/
-│ ├── features/
-│ ├── pages/
-│ ├── services/
-│ ├── App.js
-│ └── index.js
-│
-├── backend/
-│ ├── models/
-│ ├── routes/
-│ ├── controllers/
-│ └── server.js
-
+├── 📁 backend
+│   ├── 📁 models
+│   ├── 📁 routes
+│   ├── 📁 controllers
+│   └── server.js
