@@ -59,6 +59,7 @@ It helps businesses efficiently manage:
 ## 📁 Project Structure
 pos-inventory-system/
 📦 pos-inventory-system
+
 ├── 📁 frontend
 │   └── 📁 src
 │       ├── 📁 app
