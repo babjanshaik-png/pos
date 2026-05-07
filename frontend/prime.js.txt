@@ -1,0 +1,23 @@
+const express = require('express');
+const app = express();
+
+app.get('/23btrct149/:number', (req, res) => {
+  const num = parseInt(req.params.number);
+
+  if (isNaN(num) || num < 1) {
+    return res.send('Please enter a valid positive number.');
+  }
+
+  let isPrime = num > 1;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+ res.send(num + ' is ' + (isPrime ? 'a Prime' : 'not a Prime') + ' number.');
+});
+
+app.listen(3000, () => {
+  console.log('Server running at http://localhost:3000');
+});
